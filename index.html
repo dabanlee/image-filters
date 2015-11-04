@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Image Effects</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<header class="header">
+		<h2 class="text-center">Image Effects</h2>
+	</header>
+
+	<section class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-9">
+					<div class="canvas-wrapper">
+						<canvas class="canvas-panel" id="canvas-panel" width="1300" height="700">
+							您的浏览器不支持 Canvas，请更新新版本浏览器。
+						</canvas>
+						<canvas class="canvas-panel-default" id="canvas-panel-default" width="1300" height="700">你的浏览器不支持 Canvas 画布功能。</canvas>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="panel panel-default effects-select">
+						<div class="panel-heading">
+							<h3 class="panel-title">Effects</h3>
+						</div>
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-md-6 col-sm-4 col-xs-6">
+									<figure>
+										<div class="thumbnail bg-center-cover" style="background-image: url('img/thumbnail.png');">
+											<a href="" class="clear-trigger" data-effects="effect-default"></a>
+											<figcaption>Default</figcaption>
+										</div>
+									</figure>
+								</div>
+								<div class="col-md-6 col-sm-4 col-xs-6">
+									<figure>
+										<div class="thumbnail bg-center-cover" style="background-image: url('img/thumbnail-gray.png');">
+											<a href="" class="clear-trigger" data-effects="effect-gray"></a>
+											<figcaption>Gray</figcaption>
+										</div>
+									</figure>
+								</div>
+								<div class="col-md-6 col-sm-4 col-xs-6">
+									<figure>
+										<div class="thumbnail bg-center-cover" style="background-image: url('img/thumbnail-defogging.png');">
+											<a href="#" class="clear-trigger" data-effects="effect-defogging"></a>
+											<figcaption>Defogging</figcaption>
+										</div>
+									</figure>
+								</div>
+								<div class="col-md-6 col-sm-4 col-xs-6">
+									<figure>
+										<div class="thumbnail bg-center-cover" style="background-image: url('img/thumbnail-lighter.png');">
+											<a href="" class="clear-trigger" data-effects="effect-lighter"></a>
+											<figcaption>Lighter</figcaption>
+										</div>
+									</figure>
+								</div>
+								<div class="col-md-6 col-sm-4 col-xs-6">
+									<figure>
+										<div class="thumbnail bg-center-cover" style="background-image: url('img/thumbnail-old.png');">
+											<a href="" class="clear-trigger" data-effects="effect-old"></a>
+											<figcaption>Old</figcaption>
+										</div>
+									</figure>
+								</div>
+								<div class="col-md-6 col-sm-4 col-xs-6">
+									<figure>
+										<div class="thumbnail bg-center-cover" style="background-image: url('img/thumbnail-relievo.png');">
+											<a href="" class="clear-trigger" data-effects="effect-relievo"></a>
+											<figcaption>Relievo</figcaption>
+										</div>
+									</figure>
+								</div>
+								<div class="col-md-6 col-sm-4 col-xs-6">
+									<figure>
+										<div class="thumbnail bg-center-cover" style="background-image: url('img/thumbnail-black-white.png');">
+											<a href="" class="clear-trigger" data-effects="effect-black-white"></a>
+											<figcaption>Black White</figcaption>
+										</div>
+									</figure>
+								</div>
+								<div class="col-md-6 col-sm-4 col-xs-6">
+									<figure>
+										<div class="thumbnail bg-center-cover" style="background-image: url('img/thumbnail-reverse.png');">
+											<a href="#" class="clear-trigger" data-effects="effect-reverse"></a>
+											<figcaption>Reverse</figcaption>
+										</div>
+									</figure>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>

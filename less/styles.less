@@ -1,0 +1,107 @@
+/*
+Theme Name: Clear
+Theme URI: 
+Description: 
+Version: 1.1.1
+Author: Clear
+Author URI:
+*/
+
+// Import 
+// Normalize Less File
+@import "normalize.less";
+
+// Global Less File
+@import "global.less";
+
+html,
+body {
+	height: 100%;
+}
+
+.container {
+	width: 100%;
+}
+
+.canvas-wapper {
+	background: #fafafa;
+}
+	
+.canvas-panel {
+	width: 100%;
+	height: auto;
+}
+
+.canvas-panel,
+.canvas-panel-default {
+	border: 1px solid #d0d0d0;
+}
+
+.canvas-panel-default {
+	display: none;
+}
+
+.header {
+	h2 {
+		margin: 0;
+		padding: 1em 0;
+	}
+}
+
+.effects-select {
+
+	.panel-body {
+		height: 680px;
+		overflow: hidden;
+		overflow-y: scroll;
+	}
+
+	.thumbnail {
+		position:relative;
+		height: 185px;
+		margin-bottom: 1em;
+
+		& > a {
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+
+		figcaption {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			background: rgba(000, 000, 000, 0.5);
+			color: #fff;
+			line-height: 3em;
+			text-align: center;
+		}
+	}
+}
+
+@media(max-width: 1500px) {
+	.effects-select {
+
+		.thumbnail {
+			height: 120px;
+		}
+	}
+}
+
+@media(max-width: 1300px) {
+	.effects-select {
+
+		.thumbnail {
+			height: 100px;
+		}
+	}
+}
+
+@media(max-width: 1042px) {
+	.effects-select {
+
+		.thumbnail {
+			height: 185px;
+		}
+	}
+}
